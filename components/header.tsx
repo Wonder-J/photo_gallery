@@ -66,7 +66,7 @@ export function Header({ onSearch, session }: HeaderProps) {
       <div className="relative py-12 mb-8">
         {/* <wb:login-button type="3,2" onlogin="login" onlogout="logout">登录按钮</wb:login-button> */}
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white animate-fade-in mr-14 flex justify-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white animate-fade-in flex justify-center">
             Photos Gallery
           </h1>
           {/* 自定义微博登录按钮 弃用）*/}
@@ -90,13 +90,15 @@ export function Header({ onSearch, session }: HeaderProps) {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <Button
-              type="submit"
-              size="icon"
-              className="h-10 w-10 absolute right-0 bg-transparent"
-            >
-              <Search className="h-5 w-5" />
-            </Button>
+            <div className='h-12 flex items-center'>
+              <Button
+                type="submit"
+                size="icon"
+                className="h-10 w-10 absolute right-0 bg-transparent mr-3"
+              >
+                <Search className="h-5 w-5" />
+              </Button>
+            </div>
           </form>
         </div>
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px] -z-10" />

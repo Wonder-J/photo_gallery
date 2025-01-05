@@ -9,7 +9,7 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
-  title: 'Pexels Gallery',
+  title: 'Photos Gallery',
   description: 'A responsive image gallery using Pexels API',
 }
 
